@@ -1,0 +1,294 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-family: 'Uni Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #181818;
+    background-color: #ffffff;
+}
+
+header,
+nav,
+footer,
+section {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer !important;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+input,
+button {
+    display: block;
+    border: none;
+    outline: none;
+    cursor: pointer !important;
+}
+
+input {
+    &:hover {
+        cursor: pointer !important;
+        border: 0;
+        outline: none;
+    }
+
+    &::before {
+        cursor: pointer !important;
+        box-shadow: none !important;
+        border: none;
+        outline: none;
+    }
+}
+
+button {
+    &:hover {
+        cursor: pointer !important;
+        border: 0;
+        outline: none;
+    }
+
+    &::before {
+        cursor: pointer !important;
+        box-shadow: none !important;
+        border: none;
+        outline: none;
+    }
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1520px;
+    padding: 0 5px;
+}
+
+@media (max-width: 1520px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 991px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 767px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 575px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+
+.btn {
+    background-color: #3965AE;
+    border-radius: 5px;
+    width: 100%;
+    padding: 19px 0;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Uni Neue', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: .4s;
+    border: none;
+
+    &:hover {
+        transform: scale(1.03);
+        transition: .4s;
+        background-color: #5a8ddf;
+        border: none;
+        color: #FFFFFF;
+    }
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Uni Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 120%;
+    color: #3965AE;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* base */
+
+// nav
+.nav {
+    padding: 15px 0;
+    background-color: #ffffff;
+
+    &__title {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    &__btn {
+        max-width: 275px;
+    }
+}
+
+.header {
+    background-color: #4068FE;
+    margin-bottom: 100px;
+
+    .header__main {
+        padding: 40px 0 0;
+
+        &--wrapper {
+            margin-right: 136px;
+
+            &-argument {
+                background-color: #2E4ECE;
+                border-radius: 0px 10px;
+                padding: 15px 20px;
+                max-width: fit-content;
+
+                span {
+                    font-family: 'Uni Neue', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 30px;
+                    line-height: 120%;
+                    color: #FFFFFF;
+                }
+            }
+
+            &-title {
+                max-width: 790px;
+                font-family: 'Uni Neue', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 54px;
+                line-height: 120%;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.advantages {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+@font-face {
+    font-family: 'Uni Neue', sans-serif;
+    src: url('../fonts/UniNeueRegular.eot');
+    src: local('Uni Neue Regular'), local('UniNeueRegular'),
+        url('../fonts/UniNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UniNeueRegular.woff2') format('woff2'),
+        url('../fonts/UniNeueRegular.woff') format('woff'),
+        url('../fonts/UniNeueRegular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Neue', sans-serif;
+    src: url('UniNeueBold.eot');
+    src: local('Uni Neue Bold'), local('UniNeueBold'),
+        url('UniNeueBold.eot?#iefix') format('embedded-opentype'),
+        url('UniNeueBold.woff2') format('woff2'),
+        url('UniNeueBold.woff') format('woff'),
+        url('UniNeueBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url('Raleway-Bold.woff2') format('woff2'),
+        url('Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
