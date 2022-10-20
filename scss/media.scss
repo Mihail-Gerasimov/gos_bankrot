@@ -88,6 +88,57 @@
     .btn {
         font-size: 16px;
     }
+
+    .modal-dialog {
+        width: fit-content;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    .modal-content {
+        width: 315px;
+        height: 530px;
+    }
+
+    .btn-close {
+        top: 15px;
+        right: 15px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .modal-content_wrapper {
+        max-width: 295px;
+    }
+
+    .modal-title {
+        font-size: 24px;
+    }
+
+    .input {
+        padding: 15px 0 15px 15px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .thanks {
+        max-width: 300px;
+        min-height: 420px;
+    }
+
+    .thanks img {
+        right: 20px;
+        top: 20px;
+        width: 25px;
+    }
+
+    .thanks__title {
+        font-size: 24px;
+    }
+
+    .thanks__text {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 767px) {
