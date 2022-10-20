@@ -72,6 +72,10 @@
         font-size: 23px;
     }
 
+    .header {
+        margin-bottom: 40px;
+    }
+
     .advantages {
         font-size: 13px;
         margin-left: 12px;
@@ -139,6 +143,45 @@
     .thanks__text {
         font-size: 18px;
     }
+
+    .card__form--label:nth-last-child(2) {
+        margin-bottom: 10px;
+    }
+
+    .card__form--label {
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 35px;
+        margin-bottom: 70px;
+    }
+
+    .title {
+        max-width: 530px;
+        font-size: 25px;
+        margin: 0 auto 30px;
+    }
+
+    .contacts__total {
+        max-width: 405px;
+    }
+
+    .contacts__total--trigger p {
+        max-width: 310px;
+    }
+
+    .select__current {
+        padding: 15px 0 15px 15px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .select__item {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 7px 0 7px 15px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -179,6 +222,11 @@
         font-size: 20px;
     }
 
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
     .header .header__main--wrapper-title {
         font-size: 32px;
         text-align: center;
@@ -201,5 +249,81 @@
         line-height: 24px;
         max-width: 300px;
         margin: 0 auto;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .card__form--label-text {
+        padding: 15px 0 15px 15px;
+        font-size: 16px;
+    }
+
+    .card__form--label-text_check {
+        font-size: 12px;
+    }
+
+    .card__form--label-check {
+        width: 15px;
+        height: 15px;
+    }
+
+    .card__form--label-check:checked:before {
+        width: 9px;
+        height: 8px;
+        background-size: 9px 7px;
+        background-repeat: no-repeat;
+    }
+
+    .card__form--label-checkbox {
+        padding: 15px 0 15px 15px;
+    }
+
+    .card {
+        padding: 70px 10px 50px;
+        margin-bottom: 40px;
+    }
+
+    .card__number {
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 15px;
+    }
+
+    .card__number span {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .qestions {
+        margin-bottom: 40px;
+    }
+
+    .contacts__personal--description {
+        font-size: 14px;
+    }
+
+    .contacts__total--text {
+        font-size: 18px;
+    }
+
+    .contacts__total--trigger p {
+        font-size: 15px;
+        max-width: 230px;
+    }
+
+    .gos {
+        max-width: 145px;
+    }
+
+    .pravo {
+        max-width: 115px;
+    }
+
+    .footer p {
+        font-size: 16px;
     }
 }

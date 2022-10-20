@@ -178,6 +178,7 @@ button {
     font-size: 30px;
     line-height: 120%;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .section-title {
@@ -230,6 +231,8 @@ button {
     }
 }
 
+// header
+
 .header {
     background-color: #4068FE;
     margin-bottom: 100px;
@@ -277,6 +280,341 @@ button {
     line-height: 120%;
     color: #FFFFFF;
     margin-left: 20px;
+}
+
+// qestions
+
+.qestions {
+    margin-bottom: 100px;
+}
+
+.card {
+    background-color: #F8F8F8;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    width: 100%;
+    padding: 70px 10px;
+    margin-bottom: 55px;
+    position: relative;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__number {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        left: 35px;
+        top: 20px;
+        border-radius: 50%;
+        border: 1px dashed #CD4158;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-family: 'Uni Neue', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 20px;
+            color: #CD4158;
+        }
+    }
+}
+
+.card__form {
+    max-width: 830px;
+    width: 100%;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.card__form--label {
+    position: relative;
+    margin-bottom: 20px;
+    width: 405px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:nth-last-child(2) {
+        margin-bottom: 0;
+    }
+}
+
+.card__form--label-input {
+    margin: 0;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.card__form--label-text {
+    border: 1px solid #F2F2F2;
+    padding: 18px 0 18px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: 'Uni Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: start;
+}
+
+.card__form--label-input:checked+.card__form--label-text {
+    background: linear-gradient(180deg, #3D65FE 0%, #6B88F8 100%);
+    border: transparent;
+    color: #FFFFFF;
+}
+
+.card__form--label-checkbox {
+    border: 1px solid #f2f2f2;
+    padding: 18px 0 18px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.card__form--label-text_check {
+
+    font-family: 'Uni Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.card__form--label-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #3965AE;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    appearance: none;
+    position: relative;
+
+    &:hover {
+        border: 2px solid #3965AE;
+    }
+}
+
+.card__form--label-check:checked:before {
+    content: "";
+    position: absolute;
+    display: table;
+    width: 12px;
+    height: 10px;
+    background-color: transparent;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/check.png);
+}
+
+// contacts
+
+.contacts {
+    margin-bottom: 150px;
+
+    &__personal {
+        max-width: 405px;
+        width: 100%;
+
+        &--description {
+            font-family: 'Uni Neue', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+        }
+    }
+
+    &__total {
+        max-width: 510px;
+        width: 100%;
+
+        &--text {
+            font-family: 'Uni Neue', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 120%;
+        }
+    }
+
+}
+
+.progress-number {
+    font-family: 'Uni Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 120%;
+}
+
+.progress-line {
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+    max-width: 455px;
+}
+
+.progress-line-active {
+    background: linear-gradient(180deg, #3D65FE 0%, #6B88F8 100%);
+    left: 0;
+    top: 0;
+    height: 10px;
+    width: 100%;
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.select {
+    position: relative;
+    width: 100%;
+}
+
+.select__main {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.select.is-active .select__body {
+    display: block;
+}
+
+.select__header {
+    cursor: pointer;
+    display: flex;
+
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+}
+
+.select__current {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 18px 0 18px 18px;
+
+    font-family: 'Uni Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    width: 100%;
+}
+
+.select__icon {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.select__body {
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 105%;
+}
+
+.select__item {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0 10px 18px;
+
+    &:hover {
+        background-color: #e9e9e9;
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+    &:before {
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 24%);
+        position: absolute;
+        content: "";
+        height: 24px;
+        width: 24px;
+        left: 0;
+        bottom: 0px;
+        background-color: #fff;
+        transition: .4s;
+    }
+}
+
+input:checked+.slider {
+    background-color: #3965AE;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #3965AE;
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 15px;
+
+    &:before {
+        border-radius: 50%;
+    }
+}
+
+
+.contacts__total--trigger p {
+    font-family: 'Uni Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    max-width: 440px;
 }
 
 // footer
