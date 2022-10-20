@@ -191,6 +191,25 @@ button {
     margin-bottom: 80px;
 }
 
+.input {
+    background-color: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    padding: 18px 0 18px 18px;
+
+    font-family: 'Uni Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #BDBDBD;
+    width: 100%;
+
+    &:hover {
+        border: 1px solid #F2F2F2;
+    }
+}
+
 /* base */
 
 // nav
@@ -258,6 +277,111 @@ button {
     line-height: 120%;
     color: #FFFFFF;
     margin-left: 20px;
+}
+
+// footer
+.footer {
+    background: linear-gradient(180deg, #3D65FE 0%, #6B88F8 100%);
+
+    p {
+        font-family: 'Uni Neue', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 120%;
+        color: #F2F2F2;
+    }
+}
+
+// modal
+
+.modal-content {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    width: 100%;
+    width: 530px;
+    height: 560px;
+}
+
+.btn-close {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0;
+    color: transparent;
+    background: none;
+    border: none;
+    border-radius: 0;
+    opacity: 1;
+    top: 30px;
+    right: 30px;
+}
+
+.modal-content_wrapper {
+    max-width: 375px;
+    width: 100%;
+}
+
+.modal-title {
+    font-family: 'Uni Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 110%;
+    color: #CD4158;
+}
+
+.modal-description {
+    font-family: 'Uni Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+}
+
+.modal-argument {
+    font-family: 'Uni Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+// thanks
+.thanks {
+    z-index: 1000;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 991px;
+    min-height: 500px;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+
+    img {
+        right: 40px;
+        top: 40px;
+    }
+
+    &__title {
+        font-family: 'Uni Neue', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 110%;
+        color: #3965AE;
+    }
+
+    &__text {
+        font-family: 'Uni Neue', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 110%;
+    }
 }
 
 @font-face {
